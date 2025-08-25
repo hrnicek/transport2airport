@@ -1,10 +1,10 @@
 <section class="my-32">
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-      <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">
+      <h4 class="text-2xl font-base md:text-4xl md:leading-tight ">
         Odpovědi na vaše otázky
-      </h2>
-      <p class="mt-1 text-gray-600 dark:text-neutral-400">
+      </h4>
+      <p class="mt-1 text-gray-600 ">
         Odpovědi na nejčastěji kladené otázky.
       </p>
     </div>
@@ -34,8 +34,7 @@
             class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300" role="region"
             aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one">
             <p class="text-gray-800 dark:text-neutral-200">
-              Cena zahrnuje kompletní přepravu, služby profesionálního řidiče, bezplatné Wi-Fi, občerstvení a pomoc s
-              vašimi zavazadly. Vše je transparentní, bez skrytých poplatků.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, voluptas.
             </p>
           </div>
         </div>
@@ -61,9 +60,7 @@
             class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region"
             aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-two">
             <p class="text-gray-800 ">
-              Ano, naše flotila zahrnuje i prostorné vozy, jako je Mercedes-Benz třídy V, který pohodlně pojme až 6+1
-              osob
-              i s jejich zavazadly. V případě potřeby zajistíme i další vozidla.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, voluptas.
             </p>
           </div>
         </div>

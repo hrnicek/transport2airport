@@ -5,7 +5,7 @@
     <div class="pt-12">
       <div class="grid grid-cols-12">
         <div class="col-span-12">
-          <h1 class="text-xl xl:text-5xl font-bold text-white text-center">
+          <h1 class="text-xl xl:text-5xl font-medium text-white text-center">
             Odvoz na letiště a osobní přeprava <span class="text-primary"><br>
               Olomouc a okolí.
             </span>
