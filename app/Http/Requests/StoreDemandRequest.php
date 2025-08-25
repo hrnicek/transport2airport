@@ -24,12 +24,12 @@ class StoreDemandRequest extends FormRequest
         return [
             'from' => 'required|string|max:255',
             'to' => 'required|string|max:255',
-            'date' => 'required|date|after_or_equal:today',
+            'date' => 'required|date|after:today|before_or_equal:'.now()->addYear()->format('Y-m-d'),
             'people' => 'required|integer|min:1|max:7',
             'airport' => 'boolean',
-            'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
             'phone' => 'required|string|max:20',
+            'note' => 'nullable|string|max:1000',
         ];
     }
 

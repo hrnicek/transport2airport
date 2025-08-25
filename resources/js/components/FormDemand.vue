@@ -39,11 +39,13 @@ const submitForm = async () => {
       phone: '',
       note: '',
     };
+    // Redirect if redirect_url is provided
+    if (response.data.redirect_url) {
+      window.location.href = response.data.redirect_url;
+    }
   } catch (error) {
     if (error.response && error.response.status === 422) {
       errors.value = error.response.data.errors;
-
-          loading.value = false;
     }
     console.error(error);
   } finally {
@@ -70,7 +72,7 @@ const submitForm = async () => {
           <InputError :message="errors.to?.[0]" class="absolute top-full left-0 w-full" />
         </div>
         <div class="relative">
-          <Input type="date" name="date" id="date" label="Datum *" v-model="form.date" />
+          <Input type="date" name="date" id="date" label="Datum *" v-model="form.date" :min="new Date().toISOString().split('T')[0]" :max="new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString().split('T')[0]" />
           <InputError :message="errors.date?.[0]" class="absolute top-full left-0 w-full" />
         </div>
       </div>

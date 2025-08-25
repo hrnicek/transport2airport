@@ -2,7 +2,7 @@
   <div class="relative flex items-center border border-gray-200">
     <div class="grow">
       <div class="relative">
-        <input :type="type" :id="id" :name="name" :placeholder="placeholder" :value="modelValue"
+        <input :type="type" :id="id" :name="name" :placeholder="placeholder" :value="modelValue" :min="min" :max="max"
           @input="$emit('update:modelValue', $event.target.value)"
           class="p-4 block w-full border-transparent rounded-lg text-sm placeholder:text-transparent focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none pt-6 pb-2" />
         <label :for="id"
@@ -13,6 +13,6 @@
 </template>
 
 <script setup>
-defineProps(['type', 'id', 'name', 'placeholder', 'label', 'modelValue']);
+defineProps(['type', 'id', 'name', 'placeholder', 'label', 'modelValue', 'min', 'max']);
 defineEmits(['update:modelValue']);
 </script>

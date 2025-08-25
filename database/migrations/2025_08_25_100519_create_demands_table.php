@@ -13,13 +13,16 @@ return new class extends Migration
     {
         Schema::create('demands', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email');
-            $table->string('phone');
-            $table->string('airport');
-            $table->string('to');
-            $table->date('departure');
+            $table->uuid('uuid');
+            $table->string('email')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('from')->nullable();
+            $table->string('to')->nullable();
+            $table->date('date')->nullable();
+            $table->integer('people')->default(0);
+            $table->boolean('airport')->default(false);
             $table->text('note')->nullable();
+            $table->string('status')->default('placed');
             $table->timestamps();
         });
     }

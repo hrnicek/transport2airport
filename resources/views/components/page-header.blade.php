@@ -20,7 +20,7 @@
     </li>
   </ol>
   <div class="absolute left-12 bottom-12">
-    <h1 class="text-4xl font-bold text-primary">
+    <h1 class="text-4xl font-bold text-gray-800">
       {{ $title }}
     </h1>
     @if ($description)
