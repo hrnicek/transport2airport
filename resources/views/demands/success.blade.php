@@ -4,7 +4,7 @@
   <section class="py-12">
     <div class="max-w-7xl mx-auto px-4 bg-gray-50">
       <div class=" p-8 rounded-lg shadow-lg">
-        <h2 class="text-2xl font-bold text-gray-800 mb-4">Vaše žádost byla úspěšně odeslána!</h2>
+        <h2 class="text-2xl font-bold text-green-700 mb-4">Vaše žádost byla úspěšně odeslána!</h2>
         <p class="text-gray-600">Děkujeme za vaši žádost. Zavoláme Vám co nejdříve s potvrzením o přijetí vaší žádosti.</p>
       </div>
       <div class="mt-8  p-8 rounded-lg shadow-lg">

@@ -12,7 +12,7 @@ const errors = ref({});
 const loading = ref(false);
 
 const form = ref({
-  airport: false,
+  airport: true,
   from: '',
   to: '',
   date: '',
@@ -55,9 +55,14 @@ const submitForm = async () => {
 </script>
 
 <template>
-  <div class="bg-white p-6 rounded-lg shadow-lg">
+  <div class="bg-black/30 backdrop-blur-xs p-6 shadow-inner">
     <form @submit.prevent="submitForm">
-     <Toggle v-model:checked="form.airport" class="mb-4" />
+        <div class="flex justify-between items-center mb-3">
+            <Toggle v-model:checked="form.airport" /> 
+            <a href="/kontakt" class="text-sm text-white hover:underline">
+                Individuální požadavek?
+            </a>
+        </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div class="relative">
           <Input type="text" name="from" id="from" placeholder="Napište adresu" label="Odkud" v-model="form.from" />
@@ -100,8 +105,8 @@ const submitForm = async () => {
         <div class="flex items-end">
           <button type="button"
             @click="hasNote = !hasNote"
-            class="py-4 px-4 w-full border border-gray-200 hover:bg-gray-50"
-            :class="{'bg-red-400 hover:bg-red-300 text-white': hasNote}"
+            class="py-4 px-4 w-full border border-gray-200 hover:bg-gray-50 bg-white"
+            :class="{' hover:bg-red-50': hasNote}"
             >
             <span v-if="!hasNote">
             Poznámka
@@ -111,8 +116,11 @@ const submitForm = async () => {
             </span>
             </button>
         </div>
-        <div class="col-span-2">
-            
+        <div class="col-span-2 flex justify-end items-center"> 
+            <p class="text-xs text-right text-white">
+                Odeslaním formuláře souhlasíte
+                se <a href="#" class="text-primary underline">zásadami ochrany osobních údajů</a>
+            </p>
         </div>
         <div class="flex items-end col-span-1">
           <button type="submit"
