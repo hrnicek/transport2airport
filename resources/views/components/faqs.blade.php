@@ -11,7 +11,7 @@
 
     <div class="max-w-2xl mx-auto">
       <div class="hs-accordion-group">
-        <div class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 active"
+        <div class="hs-accordion hs-accordion-active:bg-gray-100 p-6 active"
           id="hs-basic-with-title-and-arrow-stretched-heading-one">
           <button
             class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-hidden focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400"
@@ -39,7 +39,7 @@
           </div>
         </div>
 
-        <div class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6"
+        <div class="hs-accordion hs-accordion-active:bg-gray-100 p-6"
           id="hs-basic-with-title-and-arrow-stretched-heading-two">
           <button
             class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-hidden focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400"

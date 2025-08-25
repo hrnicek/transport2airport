@@ -3,7 +3,7 @@
     <div class="flex justify-between items-center py-4 px-4">
       <!-- Logo -->
       <div class="flex items-center">
-        <img src="/img/logo-icon.svg" alt="Transport2Airport" class="h-8 xl:h-12 mr-4">
+        <img src="/img/logo-icon.svg" alt="Transport2Airport" class="h-8 xl:h-14 mr-4">
         <a href="/" class="text-lg xl:text-2xl font-bold text-primary">
           Transport2Airport
         </a>
@@ -12,16 +12,16 @@
       <!-- Desktop Navigation -->
       <div class="hidden lg:flex items-center">
         <nav class="flex items-center">
-          <a href="/" class="font-medium hover:text-primary px-4 py-3">
+          <a href="/" class="hover:underline hover:underline-offset-4 px-4 py-3">
             Naše služby
           </a>
-          <a href="{{ route('cars.index') }}" class="font-medium hover:text-primary px-4 py-3">
+          <a href="{{ route('cars.index') }}" class="hover:underline hover:underline-offset-4 px-4 py-3">
             Naše vozy
           </a>
-          <a href="{{ route('pricing') }}" class="font-medium hover:text-primary px-4 py-3">
+          <a href="{{ route('pricing') }}" class="hover:underline hover:underline-offset-4 px-4 py-3">
             Ceník
           </a>
-          <a href="{{ route('contact') }}" class="font-medium hover:text-primary px-4 py-3">
+          <a href="{{ route('contact') }}" class="hover:underline hover:underline-offset-4 px-4 py-3">
             Kontakt
           </a>
         </nav>

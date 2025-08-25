@@ -9,11 +9,8 @@
           <span class="text-xl font-bold text-primary">Transport2Airport</span>
         </div>
         <p class="text-sm text-gray-600 mb-4">
-          Poskytujeme profesionální přepravní služby s maximálním komfortem. Odvoz na letiště, osobní přeprava a další služby. Rychlé doručení, vždy spolehlivé.
+          Lorum ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec justo nec justo ultrices ultrices.
         </p>
-        <div class="text-sm text-gray-600">
-          <p class="mb-1">© 2025 Erik Langer | Designed by Wilson</p>
-        </div>
       </div>
 
       <!-- Services -->
@@ -32,7 +29,8 @@
         <h4 class="text-sm font-semibold text-gray-900 uppercase mb-4">Menu</h4>
         <div class="space-y-2 text-sm">
           <p><a href="/" class="text-gray-600 hover:text-primary transition-colors">Služby</a></p>
-          <p><a href="{{ route('cars.index') }}" class="text-gray-600 hover:text-primary transition-colors">Naše vozy</a></p>
+          <p><a href="{{ route('cars.index') }}" class="text-gray-600 hover:text-primary transition-colors">Naše
+              vozy</a></p>
           <p><a href="{{ route('pricing') }}" class="text-gray-600 hover:text-primary transition-colors">Ceník</a></p>
           <p><a href="{{ route('contact') }}" class="text-gray-600 hover:text-primary transition-colors">Kontakt</a></p>
         </div>
@@ -40,19 +38,20 @@
 
       <!-- Contact -->
       <div>
-        <h4 class="text-sm font-semibold text-gray-900 uppercase mb-4">Rychlý kontakt</h4>
+        <h4 class="text-sm font-semibold text-gray-900 uppercase mb-4">Kontaktní informace</h4>
         <div class="space-y-3 text-sm">
           <div class="flex items-center text-gray-600">
             <x-eva-email-outline class="w-4 h-4 mr-2 text-primary" />
-            <a href="mailto:airportpickup@seznam.cz" class="hover:text-primary transition-colors">airportpickup@seznam.cz</a>
+            <a href="mailto:airportpickup@seznam.cz"
+              class="hover:text-primary transition-colors">info@transport2airport.cz</a>
           </div>
           <div class="flex items-center text-gray-600">
             <x-eva-phone-outline class="w-4 h-4 mr-2 text-primary" />
-            <a href="tel:+420603403888" class="hover:text-primary transition-colors">+420 603 403 888</a>
+            <a href="tel:+420603403888" class="hover:text-primary transition-colors">+420 999 999 999</a>
           </div>
           <div class="flex items-center text-gray-600">
             <x-eva-file-text-outline class="w-4 h-4 mr-2 text-primary" />
-            <span>DIČ: CZ6701540858</span>
+            <span>DIČ: CZ000000</span>
           </div>
         </div>
       </div>
@@ -65,10 +64,10 @@
         <div class="flex flex-wrap gap-4 text-sm text-gray-600">
           <a href="#" class="hover:text-primary transition-colors">GDPR | Cookies</a>
         </div>
-        
+
         <!-- Copyright -->
         <div class="text-sm text-gray-600">
-          <p>© 2025 Erik Langer | Designed by Wilson</p>
+          <p>© {{ now()->format('Y') }} Transport2Airport | Made by Zondy</p>
         </div>
       </div>
     </div>
