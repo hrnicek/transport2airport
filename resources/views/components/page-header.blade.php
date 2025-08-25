@@ -3,7 +3,7 @@
     'description' => null,
 ])
 
-<div class="bg-gray-50 text-white h-[300px] max-w-7xl mx-auto relative p-12">
+<div class="bg-gray-50 text-white h-[300px] max-w-7xl mx-auto relative p-12 overflow-hidden">
   <ol class="flex items-center whitespace-nowrap">
     <li class="inline-flex items-center">
       <a class="flex items-center text-sm text-gray-500 hover:text-primary focus:outline-hidden focus:text-primary"
@@ -29,5 +29,5 @@
       </p>
     @endif
   </div>
-  <img src="/img/logo-icon.svg" alt="logo" class="absolute top-12 right-12 opacity-5">
+  <img src="/img/citroen.svg" alt="Auto citroen" class="absolute bottom-0 right-8 opacity-10 h-48">
 </div>

@@ -12,13 +12,12 @@ class Input extends Component
      * Create a new component instance.
      */
     public function __construct(
-        public string $type = 'text',
+        public string $type,
         public string $name,
         public string $id,
         public string $placeholder,
         public string $label
-    ) {
-    }
+    ) {}
 
     /**
      * Get the view / contents that represent the component.

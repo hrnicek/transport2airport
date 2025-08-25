@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('demands', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('email');
+            $table->string('phone');
+            $table->string('airport');
+            $table->string('to');
+            $table->date('departure');
+            $table->text('note')->nullable();
             $table->timestamps();
         });
     }
