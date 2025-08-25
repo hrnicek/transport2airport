@@ -1,6 +1,5 @@
 @extends('layouts.app')
 
 @section('content')
-  <x-hero />
-  <x-faqs />
+  <x-page-header title="Kontakt" description="" />
 @endsection

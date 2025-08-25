@@ -8,7 +8,7 @@ return [
 
     'generators' => [
         Generators\MetaGenerator::class => [
-            'title' => env('APP_NAME'),
+            'title' => 'Transport2Airport',
             'titleTemplate' => '{title} - '.env('APP_NAME'),
             'description' => '',
             'keywords' => [],

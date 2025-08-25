@@ -15,10 +15,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-
 
   {{ seo()->generate() }}
 
@@ -26,13 +24,12 @@
   @stack('styles')
 </head>
 
-<body class="antialiased bg-white text-zinc-900 font-sans">
+<body class="antialiased bg-white text-gray-800 font-sans">
   <div id="app">
     <x-app-header />
     @yield('content')
     <x-app-footer />
   </div>
-  <script src="../node_modules/preline/dist/preline.js"></script>
   @stack('js')
 </body>
 
