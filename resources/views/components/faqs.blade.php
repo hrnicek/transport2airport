@@ -1,4 +1,4 @@
-<section class="my-32">
+<section class="pt-16 pb-24">
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
       <h4 class="text-2xl font-base md:text-4xl md:leading-tight ">
