@@ -5,13 +5,13 @@
     'image' => null,
 ])
 
-<div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+<div class="bg-white rounded-lg shadow-sm transition-shadow duration-300 hover:shadow-md">
   <!-- Car Image -->
-  <div class="h-68 bg-gray-100 rounded-t-lg overflow-hidden">
+  <div class="h-[300px] bg-gray-100 rounded-t-lg overflow-hidden">
     @if ($image)
-      <img src="{{ $image }}" alt="{{ $name }}" class="w-full h-full object-cover">
+      <img src="{{ $image }}" alt="{{ $name }}" class="object-cover w-full h-full">
     @else
-      <div class="w-full h-full flex items-center justify-center text-gray-400">
+      <div class="flex justify-center items-center w-full h-full text-gray-400">
         <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 20 20">
           <path d="M4 3a2 2 0 00-2 2v1.5h16V5a2 2 0 00-2-2H4z" />
           <path fill-rule="evenodd"
@@ -25,7 +25,7 @@
   <!-- Car Details -->
   <div class="p-4">
     <div class="flex justify-between items-start">
-      <h3 class="text-lg font-base text-gray-900 mb-2">{{ $name }}</h3>
+      <h3 class="mb-2 text-lg text-gray-900 font-base">{{ $name }}</h3>
     </div>
 
     <div class="flex items-center space-x-6 text-base text-gray-600">
