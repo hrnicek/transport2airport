@@ -65,15 +65,15 @@ const submitForm = async () => {
         </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div class="relative">
-          <Input type="text" name="from" id="from" placeholder="Napište adresu" label="Odkud" v-model="form.from" />
+          <Input type="text" name="from" id="from" placeholder="Napište adresu" label="Odkud *" v-model="form.from" />
           <InputError :message="errors.from?.[0]" class="absolute top-full left-0 w-full" />
         </div>
         <div v-if="!form.airport" class="relative">
-          <Input type="text" name="to" id="to" placeholder="Napište adresu" label="Kam" v-model="form.to" />
+          <Input type="text" name="to" id="to" placeholder="Napište adresu" label="Kam *" v-model="form.to" />
           <InputError :message="errors.to?.[0]" class="absolute top-full left-0 w-full" />
         </div>
         <div v-else class="relative">
-          <SelectAirport name="to" id="to" label="Letiště" v-model="form.to" />
+          <SelectAirport name="to" id="to" label="Letiště *" v-model="form.to" />
           <InputError :message="errors.to?.[0]" class="absolute top-full left-0 w-full" />
         </div>
         <div class="relative">

@@ -2,7 +2,7 @@
 
 @section('content')
   <x-page-header title="Ceník dopravy na letiště" description="Možnost individuálních cen dle dohody" />
-  <section class="py-32">
+  <section class="py-32 relative">
     <div class="max-w-7xl mx-auto px-4">
       <div class="mb-8">
         <h2 class="text-3xl font-base text-left">
@@ -19,5 +19,6 @@
         <x-card-pricing title="Bratislava" subtitle="Bratislava Airport" price="4 800" currency="Kč" />
       </div>
     </div>
+    <img src="/img/citroen2.png" alt="" class="absolute bottom-0 right-16 h-68" />
   </section>
 @endsection
