@@ -25,9 +25,8 @@ class SendNewDemandPlacedOverviewAdminMail implements ShouldQueue
      */
     public function handle(DemandPlacedEvent $event): void
     {
-        // Get admin email from config or environment
-        $adminEmail = config('mail.admin_email', env('ADMIN_EMAIL', 'admin@example.com'));
-        
+        $adminEmail = 'info@transport2airport.cz';
+
         Mail::to($adminEmail)->send(new NewDemandPlacedOverviewAdminMail($event->demand));
     }
 }
