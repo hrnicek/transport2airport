@@ -16,7 +16,6 @@ class DemandsController extends Controller
 
         $demand = Demand::create($validatedData);
 
-        // Dispatch event to send admin notification
         DemandPlacedEvent::dispatch($demand);
 
         return response()->json([
