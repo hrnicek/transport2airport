@@ -24,7 +24,7 @@
   @stack('styles')
 </head>
 
-<body class="antialiased bg-white text-gray-800 font-sans">
+<body class="font-sans antialiased text-gray-800 bg-white">
   <div id="app">
     <x-app-header />
     @yield('content')
