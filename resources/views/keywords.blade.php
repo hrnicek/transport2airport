@@ -89,41 +89,41 @@
           </div>
         </article>
 
-        <article id="faq" class="flex flex-col gap-6">
-          <h2 class="text-xl font-semibold text-gray-900">
+        <article id="faq" class="flex flex-col">
+          <h2 class="text-2xl font-semibold text-gray-900">
             Časté dotazy o dopravě na letiště
           </h2>
 
-          <div class="space-y-6 text-gray-600">
-            <div class="space-y-2">
-              <h3 class="font-semibold text-gray-900">Jak si objednat odvoz na letiště?</h3>
+          <div class="mt-8 space-y-8 text-gray-600 text-lg">
+            <div class="space-y-3">
+              <h3 class="text-xl font-semibold text-gray-900">Jak si objednat odvoz na letiště?</h3>
               <p>Odvoz na letiště si můžete objednat jednoduše přes náš online formulář, telefonicky na čísle +420 737 171
                 549 nebo e-mailem na info@transport2airport.cz. Stačí uvést místo vyzvednutí, cílové letiště, datum a čas
                 odletu a počet osob.</p>
             </div>
 
-            <div class="space-y-2">
-              <h3 class="font-semibold text-gray-900">Kolik stojí doprava na letiště Praha z Olomouce?</h3>
+            <div class="space-y-3">
+              <h3 class="text-xl font-semibold text-gray-900">Kolik stojí doprava na letiště Praha z Olomouce?</h3>
               <p>Cena dopravy na letiště Václava Havla v Praze z Olomouce začíná na 5500 Kč za vůz Cupra. Kompletní ceník
                 najdete na stránce <a href="{{ route('pricing') }}"
                   class="font-semibold text-primary hover:text-primary-dark">Ceník</a>.</p>
             </div>
 
-            <div class="space-y-2">
-              <h3 class="font-semibold text-gray-900">Jaké letištní transfery nabízíte?</h3>
+            <div class="space-y-3">
+              <h3 class="text-xl font-semibold text-gray-900">Jaké letištní transfery nabízíte?</h3>
               <p>Nabízíme letištní transfery z Olomouce a okolí na letiště Praha (Václava Havla), Vídeň (Vienna Airport),
                 Brno, Ostrava, Katovice, Krakov a Bratislava. Zajišťujeme také přepravu na jakékoliv jiné letiště dle
                 dohody.</p>
             </div>
 
-            <div class="space-y-2">
-              <h3 class="font-semibold text-gray-900">Je v ceně odvozu na letiště zahrnuto parkování a čekání?</h3>
+            <div class="space-y-3">
+              <h3 class="text-xl font-semibold text-gray-900">Je v ceně odvozu na letiště zahrnuto parkování a čekání?</h3>
               <p>Ano, v ceně letištního transferu je zahrnuto parkování i přiměřená doba čekání. Při zpátečních cestách z
                 letiště sledujeme aktuální informace o příletu, takže se nemusíte obávat zpoždění.</p>
             </div>
 
-            <div class="space-y-2">
-              <h3 class="font-semibold text-gray-900">Jaké vozy používáte pro přepravu na letiště?</h3>
+            <div class="space-y-3">
+              <h3 class="text-xl font-semibold text-gray-900">Jaké vozy používáte pro přepravu na letiště?</h3>
               <p>Pro dopravu na letiště používáme komfortní vozy Cupra Formentor a Citroen SpaceTourer. Všechny vozy jsou
                 klimatizované, pravidelně čištěné a nabízejí dostatek prostoru pro cestující i zavazadla.</p>
             </div>
