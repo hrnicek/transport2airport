@@ -38,7 +38,7 @@ class HomeController extends Controller
                     ->closes('22:00'),
                 Schema::openingHoursSpecification()
                     ->dayOfWeek(['Saturday', 'Sunday'])
-                    ->opens('06:00')
+                    ->opens('07:00')
                     ->closes('22:00'),
             ])
             ->priceRange('$$')
