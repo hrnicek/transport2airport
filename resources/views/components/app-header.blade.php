@@ -31,10 +31,10 @@
             <x-eva-email-outline class="mr-1 w-5 h-5" />
             info@transport2airport.cz
           </a>
-          <a href="tel:+420737171539"
+          <a href="tel:+420737171549"
             class="flex items-center px-4 py-2 text-base font-semibold text-white bg-primary hover:bg-primary/90">
             <x-eva-phone-outline class="mr-1 w-5 h-5" />
-            +420 737 171 539
+            +420 737 171 549
           </a>
         </div>
       </div>
