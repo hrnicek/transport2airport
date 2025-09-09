@@ -8,10 +8,15 @@ return [
 
     'generators' => [
         Generators\MetaGenerator::class => [
-            'title' => 'Transport2Airport',
-            'titleTemplate' => '{title} - '.env('APP_NAME'),
-            'description' => '',
-            'keywords' => [],
+            'title' => 'Transport2Airport - Odvoz na letiště a osobní přeprava',
+            'titleTemplate' => '{title} | Transport2Airport',
+            'description' => 'Spolehlivá doprava na letiště Václava Havla, Vídeň, Brno, Ostrava a další. Odvoz z Olomouce a okolí. Rezervujte si transfer na letiště ještě dnes!',
+            'keywords' => [
+                'doprava na letiště', 'přeprava na letiště', 'odvoz na letiště', 'transfer na letiště', 'taxi na letiště',
+                'doprava na letiště Václava Havla', 'odvoz z Olomouce na letiště Praha', 'přeprava na letiště Vídeň z Olomouce',
+                'letištní transfer', 'osobní přeprava na letiště', 'letištní taxi', 'soukromý odvoz na letiště',
+                'cena taxi na letiště', 'levná doprava na letiště Praha', 'rezervace transferu na letiště',
+            ],
             'canonicalEnabled' => true,
             'canonical' => null, // null to use current url
             'robots' => [],
@@ -27,27 +32,27 @@ return [
         ],
         Generators\TwitterGenerator::class => [
             'enabled' => true,
-            'site' => '', // @twitterUsername
+            'site' => '@transport2airport', // @twitterUsername
             'card' => 'summary_large_image',
-            'creator' => '',
+            'creator' => '@transport2airport',
             'creatorId' => '',
-            'title' => '',
-            'description' => '',
-            'image' => '',
-            'imageAlt' => '',
+            'title' => 'Odvoz na letiště a osobní přeprava | Transport2Airport',
+            'description' => 'Spolehlivá doprava na letiště Václava Havla, Vídeň, Brno, Ostrava a další. Odvoz z Olomouce a okolí.',
+            'image' => '/img/logo-icon.svg',
+            'imageAlt' => 'Transport2Airport logo - odvoz na letiště',
         ],
         Generators\OpenGraphGenerator::class => [
             'enabled' => true,
             'site' => env('APP_NAME'),
             'type' => 'website',
-            'title' => '',
-            'description' => '',
-            'images' => [],
+            'title' => 'Odvoz na letiště a osobní přeprava | Transport2Airport',
+            'description' => 'Spolehlivá doprava na letiště Václava Havla, Vídeň, Brno, Ostrava a další. Odvoz z Olomouce a okolí.',
+            'images' => ['/img/logo-icon.svg'],
             'audio' => [],
             'videos' => [],
             'determiner' => '',
             'url' => null, // null to use current url
-            'locale' => '',
+            'locale' => 'cs_CZ',
             'alternateLocales' => [],
             'custom' => [],
         ],

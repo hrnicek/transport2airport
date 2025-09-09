@@ -8,7 +8,8 @@ class HomeController extends Controller
 {
     public function index()
     {
-        seo()->title('Odvoz na letiště a osobní přeprava Olomouc a okolí.');
+        seo()->title('Odvoz na letiště z Olomouce | Doprava na letiště Praha, Vídeň, Brno');
+        seo()->description('Spolehlivá doprava na letiště z Olomouce a okolí. Nabízíme komfortní odvoz na letiště Praha, Vídeň, Brno, Ostrava a další. Rezervujte si transfer ještě dnes!');
 
         // Vytvoření strukturovaných dat JSON-LD pro LocalBusiness
         $schema = Schema::localBusiness()

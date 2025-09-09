@@ -36,6 +36,11 @@ class SitemapController extends Controller
             ->setPriority(0.8)
             ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY));
 
+        // Doprava na letiště
+        $sitemap->add(Url::create(url('/doprava-na-letiste'))
+            ->setPriority(0.9)
+            ->setChangeFrequency(Url::CHANGE_FREQUENCY_WEEKLY));
+
         return response($sitemap->render(), 200, ['Content-Type' => 'application/xml']);
     }
 }
