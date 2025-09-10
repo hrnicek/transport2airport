@@ -9,37 +9,45 @@
           <span class="text-xl font-bold text-primary">Transport2Airport</span>
         </div>
         <p class="mb-4 text-sm text-gray-600">
-          Lorum ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec justo nec justo ultrices ultrices.
+          Cestujte bez starostí! Nabízíme soukromý odvoz na letiště z Olomouce a okolí za pevné ceny. Jezdíme do Prahy,
+          Vídně, Brna a dalších letišť. Rezervujte si jízdu ještě dnes.
         </p>
       </div>
 
       <!-- Services -->
       <div>
-        <h4 class="mb-4 text-sm font-semibold text-gray-900 uppercase">Naše služby</h4>
+        <h4 class="mb-4 text-sm font-semibold text-gray-900 uppercase">{{ __('navigation.footer.services') }}</h4>
         <div class="space-y-2 text-sm">
           <a href="{{ route('keywords') }}" class="text-gray-600 transition-colors hover:text-primary">
-            Doprava na letiště
+            {{ __('navigation.footer.airport_transport') }}
           </a>
-          <p><a href="/" class="text-gray-600 transition-colors hover:text-primary">Přeprava z/na letiště</a></p>
-          <p><a href="/" class="text-gray-600 transition-colors hover:text-primary">Osobní přeprava</a></p>
+          <p><a href="/"
+              class="text-gray-600 transition-colors hover:text-primary">{{ __('navigation.footer.airport_pickup') }}</a>
+          </p>
+          <p><a href="/"
+              class="text-gray-600 transition-colors hover:text-primary">{{ __('navigation.footer.personal_transport') }}</a>
+          </p>
         </div>
       </div>
 
       <!-- Menu -->
       <div>
-        <h4 class="mb-4 text-sm font-semibold text-gray-900 uppercase">Menu</h4>
+        <h4 class="mb-4 text-sm font-semibold text-gray-900 uppercase">{{ __('navigation.footer.menu') }}</h4>
         <div class="space-y-2 text-sm">
-          <p><a href="/" class="text-gray-600 transition-colors hover:text-primary">Služby</a></p>
-          <p><a href="{{ route('cars.index') }}" class="text-gray-600 transition-colors hover:text-primary">Naše
-              vozy</a></p>
-          <p><a href="{{ route('pricing') }}" class="text-gray-600 transition-colors hover:text-primary">Ceník</a></p>
-          <p><a href="{{ route('contact') }}" class="text-gray-600 transition-colors hover:text-primary">Kontakt</a></p>
+          <p><a href="/"
+              class="text-gray-600 transition-colors hover:text-primary">{{ __('navigation.menu.services') }}</a></p>
+          <p><a href="{{ route('cars.index') }}"
+              class="text-gray-600 transition-colors hover:text-primary">{{ __('navigation.menu.cars') }}</a></p>
+          <p><a href="{{ route('pricing') }}"
+              class="text-gray-600 transition-colors hover:text-primary">{{ __('navigation.menu.pricing') }}</a></p>
+          <p><a href="{{ route('contact') }}"
+              class="text-gray-600 transition-colors hover:text-primary">{{ __('navigation.menu.contact') }}</a></p>
         </div>
       </div>
 
       <!-- Contact -->
       <div>
-        <h4 class="mb-4 text-sm font-semibold text-gray-900 uppercase">Kontaktní informace</h4>
+        <h4 class="mb-4 text-sm font-semibold text-gray-900 uppercase">{{ __('navigation.footer.contact_info') }}</h4>
         <div class="space-y-3 text-sm">
           <div class="flex items-center text-gray-600">
             <x-eva-email-outline class="mr-2 w-4 h-4 text-primary" />
@@ -48,11 +56,11 @@
           </div>
           <div class="flex items-center text-gray-600">
             <x-eva-phone-outline class="mr-2 w-4 h-4 text-primary" />
-            <a href="tel:+420603403888" class="transition-colors hover:text-primary">+420 999 999 999</a>
+            <a href="tel:+420737171549" class="transition-colors hover:text-primary">+420 737 171 549</a>
           </div>
           <div class="flex items-center text-gray-600">
             <x-eva-file-text-outline class="mr-2 w-4 h-4 text-primary" />
-            <span>DIČ: CZ000000</span>
+            <span>IČO: 23480238</span>
           </div>
         </div>
       </div>
@@ -63,12 +71,12 @@
       <div class="flex flex-col gap-4 sm:flex-row sm:justify-between sm:items-center">
         <!-- Legal Links -->
         <div class="flex flex-wrap gap-4 text-sm text-gray-600">
-          <a href="#" class="transition-colors hover:text-primary">GDPR | Cookies</a>
+          <a href="#" class="transition-colors hover:text-primary">{{ __('navigation.footer.gdpr') }}</a>
         </div>
 
         <!-- Copyright -->
         <div class="text-sm text-gray-600">
-          <p>© {{ now()->format('Y') }} Transport2Airport | Made by Zondy</p>
+          <p>{{ __('navigation.footer.copyright', ['year' => now()->format('Y')]) }}</p>
         </div>
       </div>
     </div>

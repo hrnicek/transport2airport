@@ -6,13 +6,10 @@
       <div class="grid grid-cols-12">
         <div class="col-span-12">
           <h1 class="text-xl font-medium text-center text-white xl:text-5xl">
-            Odvoz na letiště a osobní přeprava <span class="text-primary"><br>
-              Olomouc a okolí.
-            </span>
+            {!! __('components.hero.title') !!}
           </h1>
           <p class="mx-auto mt-4 max-w-2xl text-xs text-center text-white/90 xl:text-xl xl:mt-8">
-            Ať už je to transfer na letiště, který vám ušetří starosti, nebo svatební servis, který podtrhne výjimečnost
-            vašeho dne, jsme tu pro vás.
+            {{ __('components.hero.subtitle') }}
           </p>
         </div>
       </div>

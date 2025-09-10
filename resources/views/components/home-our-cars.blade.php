@@ -2,10 +2,10 @@
   <div class="mx-auto max-w-7xl bg-gray-50 lg:p-12">
     <div class="max-w-2xl mx-auto lg:mx-0">
       <h2 class="tracking-tight text-gray-900 md:text-4xl font-base">
-        Naše vozy
+        {{ __('components.our_cars.title') }}
       </h2>
       <p class="mt-4 text-lg text-gray-600">
-        Objevte flotilu našich moderních a komfortních vozů.
+        {{ __('components.our_cars.subtitle') }}
       </p>
     </div>
     <div class="mt-16">

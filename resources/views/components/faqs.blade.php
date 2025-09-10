@@ -2,10 +2,10 @@
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     <div class="max-w-2xl mx-auto mb-10 text-center lg:mb-14">
       <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">
-        Odpovědi na vaše otázky
+        {{ __('components.faqs.title') }}
       </h2>
       <p class="mt-1 text-gray-600 dark:text-neutral-400">
-        Odpovědi na nejčastěji kladené otázky.
+        {{ __('components.faqs.subtitle') }}
       </p>
     </div>
 
@@ -41,7 +41,7 @@
             </div>
           </div>
         @empty
-          <p>No FAQs available.</p>
+          <p>{{ __('components.faqs.no_faqs') }}</p>
         @endforelse
       </div>
     </div>

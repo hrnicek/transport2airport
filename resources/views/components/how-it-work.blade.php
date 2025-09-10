@@ -4,10 +4,10 @@
       class="object-cover absolute top-0 left-0 z-10 w-full h-full opacity-10"></video>
     <div class="relative z-20 mx-auto max-w-2xl lg:mx-0">
       <h2 class="tracking-tight text-gray-900 md:text-4xl font-base">
-        Jak to funguje?
+        {{ __('components.how_it_works.title') }}
       </h2>
       <p class="mt-4 text-lg text-gray-600">
-        Rezervujte si jízdu rychle a snadno.<br> Ukážeme vám, jak na to v pouhých třech krocích.
+        {!! __('components.how_it_works.subtitle') !!}
       </p>
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -17,11 +17,11 @@
             <div class="flex justify-center items-center mb-6 text-white rounded-lg size-10 bg-primary">
               1
             </div>
-            Vytvoření rezervace
+            {{ __('components.how_it_works.step1.title') }}
           </dt>
           <dd class="flex flex-col flex-auto mt-1 text-gray-600 text-base/7">
             <p class="flex-auto">
-              Objednejte si jízdu na konkrétní čas a my přijedeme přesně podle domluvy.
+              {{ __('components.how_it_works.step1.description') }}
             </p>
           </dd>
         </div>
@@ -30,11 +30,11 @@
             <div class="flex justify-center items-center mb-6 text-white rounded-lg size-10 bg-primary">
               2
             </div>
-            Potvrzení rezervace
+            {{ __('components.how_it_works.step2.title') }}
           </dt>
           <dd class="flex flex-col flex-auto mt-1 text-gray-600 text-base/7">
             <p class="flex-auto">
-              Užijte si komfortní cestu v našich vozech. Během jízdy vás čeká malé občerstvení a perfektní servis.
+              {{ __('components.how_it_works.step2.description') }}
             </p>
           </dd>
         </div>
@@ -43,11 +43,11 @@
             <div class="flex justify-center items-center mb-6 text-white rounded-lg size-10 bg-primary">
               3
             </div>
-            Příjezd na místo
+            {{ __('components.how_it_works.step3.title') }}
           </dt>
           <dd class="flex flex-col flex-auto mt-1 text-gray-600 text-base/7">
             <p class="flex-auto">
-              Dovezeme vás bezpečně a včas na místo určení, abyste se mohli soustředit na to, co je pro vás důležité.
+              {{ __('components.how_it_works.step3.description') }}
             </p>
           </dd>
         </div>

@@ -1,5 +1,8 @@
 <header>
   <div class="mx-auto my-4 max-w-7xl">
+    <div class="flex justify-end">
+      <x-lang-switcher />
+    </div>
     <div class="flex justify-between items-center px-4 py-4">
       <!-- Logo -->
       <div class="flex items-center">
@@ -13,19 +16,20 @@
       <div class="hidden items-center lg:flex">
         <nav class="flex items-center">
           <a href="/" class="px-4 py-3 hover:underline hover:underline-offset-4">
-            Naše služby
+            {{ __('navigation.menu.services') }}
           </a>
           <a href="{{ route('cars.index') }}" class="px-4 py-3 hover:underline hover:underline-offset-4">
-            Naše vozy
+            {{ __('navigation.menu.cars') }}
           </a>
           <a href="{{ route('pricing') }}" class="px-4 py-3 hover:underline hover:underline-offset-4">
-            Ceník
+            {{ __('navigation.menu.pricing') }}
           </a>
           <a href="{{ route('contact') }}" class="px-4 py-3 hover:underline hover:underline-offset-4">
-            Kontakt
+            {{ __('navigation.menu.contact') }}
           </a>
         </nav>
         <div class="flex items-center ml-8 space-x-2">
+
           <a href="mailto:info@transport2airport.cz"
             class="flex items-center px-4 py-2 text-base font-semibold text-white bg-primary hover:bg-primary/90">
             <x-eva-email-outline class="mr-1 w-5 h-5" />

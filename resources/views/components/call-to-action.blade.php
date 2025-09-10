@@ -1,14 +1,13 @@
-<div class="max-w-7xl mx-auto px-4 py-16 my-12 bg-primary relative">
-  <div class="grid grid-cols-2 items-center">
+<div class="relative px-4 py-16 mx-auto my-12 max-w-7xl bg-primary">
+  <div class="grid items-center lg:grid-cols-2">
     <div class="px-16">
-      <h6 class="text-white text-4xl">
-        Rezervujte si odvoz<br> nebo dopravu
+      <h6 class="text-2xl text-white lg:text-4xl">
+        {!! __('components.call_to_action.title') !!}
       </h6>
-      <p class="text-white mt-4">
-        Ať už potřebujete odvoz na letiště, osobní přepravu, rychlé doručení zásilek, jsme
-        tu, abychom vás pohodlně dopravili na místo určení!
+      <p class="mt-4 text-white">
+        {{ __('components.call_to_action.description') }}
       </p>
     </div>
   </div>
-  <img src="/img/citroen2.png" alt="Náš vůz Citroen" class="absolute -right-8 bottom-0">
+  <img src="/img/citroen2.png" alt="Náš vůz Citroen" class="absolute -right-8 -bottom-[40%] lg:bottom-0">
 </div>

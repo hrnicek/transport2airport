@@ -11,6 +11,7 @@
   <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
   <link rel="shortcut icon" href="/favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="ToAirport" />
   <link rel="manifest" href="/favicon/site.webmanifest" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +25,7 @@
   @stack('styles')
 </head>
 
-<body class="font-sans antialiased text-gray-800 bg-white">
+<body class="relative font-sans antialiased text-gray-800 bg-white">
   <div id="app">
     <x-app-header />
     @yield('content')

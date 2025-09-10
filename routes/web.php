@@ -8,14 +8,17 @@ use App\Http\Controllers\KeywordsController;
 use App\Http\Controllers\PricingController;
 use App\Http\Controllers\SitemapController;
 use Illuminate\Support\Facades\Route;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/nase-vozy', [CarsController::class, 'index'])->name('cars.index');
-Route::get('/cenik', [PricingController::class, 'index'])->name('pricing');
-Route::get('/kontakt', [ContactController::class, 'index'])->name('contact');
-Route::get('/doprava-na-letiste', [KeywordsController::class, 'index'])->name('keywords');
+Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localize']], function () {
+    Route::get('/', [HomeController::class, 'index'])->name('home');
+    Route::get(LaravelLocalization::transRoute('routes.cars'), [CarsController::class, 'index'])->name('cars.index');
+    Route::get(LaravelLocalization::transRoute('routes.pricing'), [PricingController::class, 'index'])->name('pricing');
+    Route::get(LaravelLocalization::transRoute('routes.contact'), [ContactController::class, 'index'])->name('contact');
+    Route::get(LaravelLocalization::transRoute('routes.keywords'), [KeywordsController::class, 'index'])->name('keywords');
 
-Route::get('/poptavka/{demand:uuid}', [DemandsController::class, 'success'])->name('demands.success');
+    Route::get(LaravelLocalization::transRoute('routes.demands.success'), [DemandsController::class, 'success'])->name('demands.success');
+});
 
 // Sitemap
 Route::get('/sitemap.xml', [SitemapController::class, 'index']);

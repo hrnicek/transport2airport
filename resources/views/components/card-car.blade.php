@@ -30,12 +30,12 @@
     <div class="flex items-center space-x-6 text-base text-gray-600">
       <div class="flex items-center space-x-1">
         <x-eva-people-outline class="w-5 h-5" />
-        <span>{{ $seats }}</span>
+        <span>{{ $seats }} {{ __('components.our_cars.seats') }}</span>
       </div>
 
       <div class="flex items-center space-x-1">
         <x-eva-briefcase-outline class="w-5 h-5" />
-        <span>{{ $luggage }}</span>
+        <span>{{ $luggage }} {{ __('components.our_cars.luggage') }}</span>
       </div>
     </div>
   </div>
