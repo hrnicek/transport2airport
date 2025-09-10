@@ -10,7 +10,7 @@ use App\Http\Controllers\SitemapController;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
-Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localize']], function () {
+Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['localeSessionRedirect', 'localizationRedirect']], function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
     Route::get(LaravelLocalization::transRoute('routes.cars'), [CarsController::class, 'index'])->name('cars.index');
     Route::get(LaravelLocalization::transRoute('routes.pricing'), [PricingController::class, 'index'])->name('pricing');
