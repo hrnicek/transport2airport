@@ -10,9 +10,9 @@
     </div>
     <div class="mt-16">
       <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2">
-        <x-card-car name="Citroen Spacetourer" image="/img/taxi-na-letiste-citroen.jpeg" seats="7" luggage="7" />
+        <x-card-car name="Citroen Spacetourer" image="/img/taxi-na-letiste-citroen.webp" seats="7" luggage="7" />
 
-        <x-card-car name="Cupra Leon hybrid" image="/img/autem-na-letiste-cupra.jpeg" seats="3" luggage="4" />
+        <x-card-car name="Cupra Leon hybrid" image="/img/autem-na-letiste-cupra.webp" seats="3" luggage="4" />
       </div>
     </div>
   </div>

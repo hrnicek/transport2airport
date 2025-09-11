@@ -1,7 +1,7 @@
 @props([
     'title' => null,
     'description' => null,
-    'image' => '/img/page-header.jpg',
+    'image' => '/img/page-header.webp',
 ])
 
 <div class="bg-gray-50 text-white h-[350px] max-w-7xl mx-auto relative p-12 overflow-hidden">
