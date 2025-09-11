@@ -86,4 +86,28 @@ return [
         'title' => 'Frequently Asked Questions',
         'subtitle' => 'Find answers to common questions',
     ],
+
+    // SEO
+    'seo' => [
+        'home' => [
+            'title' => 'Airport transfers from Olomouc | Transport to Prague, Vienna, Brno airports',
+            'description' => 'Reliable airport transportation from Olomouc and surroundings. We offer comfortable rides to Prague, Vienna, Brno, Ostrava and more. Book your transfer today!',
+        ],
+        'pricing' => [
+            'title' => 'Airport transfer pricing | Rates to Prague, Vienna, Brno airports',
+            'description' => 'Complete pricing for airport transfers from Olomouc. Check rates to Prague, Vienna, Brno, Ostrava and more. We guarantee transparent prices with no hidden fees.',
+        ],
+        'contact' => [
+            'title' => 'Contact | Book your airport transfer from Olomouc',
+            'description' => 'Contact us to book your airport transfer from Olomouc and nearby areas. We provide reliable rides to Prague, Vienna, Brno and more. Book your transfer today!',
+        ],
+        'cars' => [
+            'title' => 'Our fleet',
+            'description' => 'Explore our fleet for comfortable and safe airport transfers.',
+        ],
+        'keywords' => [
+            'title' => 'Airport transportation | Transfers to Prague, Vienna, Brno from Olomouc',
+            'description' => 'Reliable airport transportation from Olomouc and surroundings. We offer transfers to Prague, Vienna, Brno and more. Book your airport transfer today!',
+        ],
+    ],
 ];

@@ -8,8 +8,8 @@ class ContactController extends Controller
 {
     public function index()
     {
-        seo()->title('Kontakt | Rezervace odvozu na letiště z Olomouce');
-        seo()->description('Kontaktujte nás pro rezervaci odvozu na letiště z Olomouce a okolí. Zajistíme vám spolehlivou dopravu na letiště Praha, Vídeň, Brno a další. Objednejte si transfer ještě dnes!');
+        seo()->title(__('app.seo.contact.title'));
+        seo()->description(__('app.seo.contact.description'));
 
         $schema = Schema::localBusiness()
             ->name('Transport2Airport')

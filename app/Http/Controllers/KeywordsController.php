@@ -8,8 +8,8 @@ class KeywordsController extends Controller
 {
     public function index()
     {
-        seo()->title('Doprava na letiště | Odvoz na letiště Praha, Vídeň, Brno z Olomouce');
-        seo()->description('Spolehlivá doprava na letiště z Olomouce a okolí. Nabízíme odvoz na letiště Praha, Vídeň, Brno a další. Rezervujte si letištní transfer ještě dnes!');
+        seo()->title(__('app.seo.keywords.title'));
+        seo()->description(__('app.seo.keywords.description'));
 
         // Vytvoření strukturovaných dat JSON-LD pro FAQPage
         $schema = Schema::fAQPage()

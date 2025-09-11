@@ -15,7 +15,7 @@ return [
                 'doprava na letiště', 'přeprava na letiště', 'odvoz na letiště', 'transfer na letiště', 'taxi na letiště',
                 'doprava na letiště Václava Havla', 'odvoz z Olomouce na letiště Praha', 'přeprava na letiště Vídeň z Olomouce',
                 'letištní transfer', 'osobní přeprava na letiště', 'letištní taxi', 'soukromý odvoz na letiště',
-                'cena taxi na letiště', 'levná doprava na letiště Praha', 'rezervace transferu na letiště',
+                'cena taxi na letiště', 'levná doprava na letiště Praha', 'rezervace transferu na letiště'
             ],
             'canonicalEnabled' => true,
             'canonical' => null, // null to use current url

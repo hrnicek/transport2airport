@@ -8,8 +8,8 @@ class PricingController extends Controller
 {
     public function index()
     {
-        seo()->title('Ceník dopravy na letiště | Ceny odvozu na letiště Praha, Vídeň, Brno');
-        seo()->description('Kompletní ceník dopravy na letiště z Olomouce. Zjistěte ceny odvozu na letiště Praha, Vídeň, Brno, Ostrava a další. Garantujeme transparentní ceny bez skrytých poplatků.');
+        seo()->title(__('app.seo.pricing.title'));
+        seo()->description(__('app.seo.pricing.description'));
 
         // Vytvoření strukturovaných dat JSON-LD pro TaxiService
         $schema = Schema::taxiService()

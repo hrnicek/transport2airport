@@ -86,4 +86,28 @@ return [
         'title' => 'Často kladené otázky',
         'subtitle' => 'Najděte odpovědi na běžné otázky',
     ],
+
+    // SEO
+    'seo' => [
+        'home' => [
+            'title' => 'Odvoz na letiště z Olomouce | Doprava na letiště Praha, Vídeň, Brno',
+            'description' => 'Spolehlivá doprava na letiště z Olomouce a okolí. Nabízíme komfortní odvoz na letiště Praha, Vídeň, Brno, Ostrava a další. Rezervujte si transfer ještě dnes!',
+        ],
+        'pricing' => [
+            'title' => 'Ceník dopravy na letiště | Ceny odvozu na letiště Praha, Vídeň, Brno',
+            'description' => 'Kompletní ceník dopravy na letiště z Olomouce. Zjistěte ceny odvozu na letiště Praha, Vídeň, Brno, Ostrava a další. Garantujeme transparentní ceny bez skrytých poplatků.',
+        ],
+        'contact' => [
+            'title' => 'Kontakt | Rezervace odvozu na letiště z Olomouce',
+            'description' => 'Kontaktujte nás pro rezervaci odvozu na letiště z Olomouce a okolí. Zajistíme vám spolehlivou dopravu na letiště Praha, Vídeň, Brno a další. Objednejte si transfer ještě dnes!',
+        ],
+        'cars' => [
+            'title' => 'Naše vozový park',
+            'description' => 'Prohlédněte si náš vozový park pro pohodlné a bezpečné transfery na letiště.',
+        ],
+        'keywords' => [
+            'title' => 'Doprava na letiště | Odvoz na letiště Praha, Vídeň, Brno z Olomouce',
+            'description' => 'Spolehlivá doprava na letiště z Olomouce a okolí. Nabízíme odvoz na letiště Praha, Vídeň, Brno a další. Rezervujte si letištní transfer ještě dnes!',
+        ],
+    ],
 ];
