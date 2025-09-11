@@ -1,7 +1,10 @@
 <div class="py-24 sm:py-32">
   <div class="relative p-12 mx-auto max-w-7xl bg-gray-50">
-    <video src="/videos/jaktofunguje.mp4" autoplay loop muted
-      class="object-cover absolute top-0 left-0 z-10 w-full h-full opacity-10"></video>
+    <video autoplay loop muted playsinline
+      class="object-cover absolute top-0 left-0 z-10 w-full h-full opacity-10">
+      <source src="/videos/jaktofunguje.webm" type="video/webm">
+      <source src="/videos/jaktofunguje.mp4" type="video/mp4">
+    </video>
     <div class="relative z-20 mx-auto max-w-2xl lg:mx-0">
       <h2 class="tracking-tight text-gray-900 md:text-4xl font-base">
         {{ __('components.how_it_works.title') }}

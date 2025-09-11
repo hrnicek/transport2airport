@@ -1,5 +1,8 @@
 <div class="relative h-[600px] max-w-7xl mx-auto">
-  <video class="object-cover absolute top-0 left-0 z-0 w-full h-full" src="/videos/hero.mp4" autoplay loop muted></video>
+  <video class="object-cover absolute top-0 left-0 z-0 w-full h-full" autoplay loop muted playsinline>
+    <source src="/videos/hero.webm" type="video/webm">
+    <source src="/videos/hero.mp4" type="video/mp4">
+  </video>
   <div class="absolute top-0 left-0 z-10 w-full h-full bg-black/70"></div>
   <div class="flex relative z-20 flex-col justify-between px-4 mx-auto max-w-7xl h-full">
     <div class="pt-12">
