@@ -27,13 +27,6 @@ class FaqForm
                             ->required()
                             ->rows(4),
                     ]),
-
-                TextInput::make('order_column')
-                    ->label('Pořadí')
-                    ->numeric()
-                    ->default(0)
-                    ->required(),
-
                 Toggle::make('is_active')
                     ->label('Aktivní')
                     ->default(true),
