@@ -1,10 +1,10 @@
 <template>
-  <div class="relative flex items-center border border-gray-200">
+  <div class="flex relative items-center border border-gray-200">
     <div class="grow">
       <div class="relative">
         <select :id="id" :name="name" :value="modelValue"
           @change="$emit('update:modelValue', $event.target.value)"
-          class="p-4 block w-full border-transparent rounded-lg text-sm focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none pt-6 pb-2">
+          class="block p-4 pt-6 pb-2 w-full text-sm rounded-lg border-transparent focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none">
           <option v-for="option in options" :key="option.value" :value="option.value">
             {{ option.text }}
           </option>
@@ -23,12 +23,12 @@ defineProps(['id', 'name', 'label', 'modelValue']);
 defineEmits(['update:modelValue']);
 
 const options = ref([
-  { text: 'Vídeň - 4800 Kč', value: 'viden' },
-  { text: 'Praha - 5800 Kč', value: 'praha' },
-  { text: 'Ostrava - 2500 Kč', value: 'ostrava' },
-  { text: 'Brno - 2000 Kč', value: 'brno' },
-  { text: 'Katovice - 4800 Kč', value: 'katovice' },
-  { text: 'Krakow - 5800 Kč', value: 'krakow' },
-  { text: 'Bratislava - 4800 Kč', value: 'bratislava' },
+  { text: 'Vídeň', value: 'viden' },
+  { text: 'Praha', value: 'praha' },
+  { text: 'Ostrava', value: 'ostrava' },
+  { text: 'Brno', value: 'brno' },
+  { text: 'Katovice', value: 'katovice' },
+  { text: 'Krakow', value: 'krakow' },
+  { text: 'Bratislava', value: 'bratislava' },
 ]);
 </script>
