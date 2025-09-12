@@ -28,6 +28,7 @@ class PostForm
                                 ->label('Perex'),
                             RichEditor::make('content')
                                 ->label('Obsah')
+                                ->required()
                                 ->columnSpanFull(),
                         ]),
                     DateTimePicker::make('published_at')
