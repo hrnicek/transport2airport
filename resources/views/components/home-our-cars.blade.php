@@ -1,6 +1,6 @@
 <div class="pt-16 pb-24">
-  <div class="mx-auto max-w-7xl bg-gray-50 lg:p-12">
-    <div class="max-w-2xl mx-auto lg:mx-0">
+  <div class="p-6 mx-auto max-w-7xl bg-gray-50 lg:p-12">
+    <div class="mx-auto max-w-2xl lg:mx-0">
       <h2 class="tracking-tight text-gray-900 md:text-4xl font-base">
         {{ __('components.our_cars.title') }}
       </h2>

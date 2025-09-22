@@ -1,4 +1,4 @@
-<div class="relative px-4 py-16 mx-auto my-12 max-w-7xl bg-primary">
+<div class="overflow-x-hidden relative px-4 py-16 mx-auto my-12 max-w-7xl bg-primary">
   <div class="grid items-center lg:grid-cols-2">
     <div class="px-16">
       <h6 class="text-2xl text-white lg:text-4xl">
