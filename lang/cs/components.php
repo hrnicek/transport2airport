@@ -45,6 +45,7 @@ return [
     ],
     'form_demand' => [
         'individual_request' => 'Individuální požadavek?',
+        'toggle_airport' => 'Na letiště?',
         'labels' => [
             'from' => 'Odkud *',
             'to' => 'Kam *',

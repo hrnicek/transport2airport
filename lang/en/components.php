@@ -45,6 +45,7 @@ return [
     ],
     'form_demand' => [
         'individual_request' => 'Individual request?',
+        'toggle_airport' => 'To airport?',
         'labels' => [
             'from' => 'From *',
             'to' => 'To *',

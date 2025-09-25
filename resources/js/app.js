@@ -2,9 +2,16 @@ import './bootstrap';
 import '../../node_modules/preline/dist/preline.js';
 import { createApp } from 'vue';
 import FormDemand from './components/FormDemand.vue';
+import { i18nVue } from 'laravel-vue-i18n';
 
 // Initialize Vue app
 const app = createApp(FormDemand);
+app.use(i18nVue, {
+    resolve: async lang => {
+        const langs = import.meta.glob('../../lang/*.json');
+        return await langs[`../../lang/${lang}.json`]();
+    }
+});
 app.mount('#form-demand');
 app.config.globalProperties.$appName = 'Transport2Airport';
 
