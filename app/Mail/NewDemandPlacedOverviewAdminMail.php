@@ -30,6 +30,7 @@ class NewDemandPlacedOverviewAdminMail extends Mailable
     {
         return new Envelope(
             subject: 'Nová poptávka - ' . $this->demand->from . ' → ' . $this->demand->to,
+            replyTo: [$this->demand->email],
         );
     }
 

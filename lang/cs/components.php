@@ -43,4 +43,34 @@ return [
         'subtitle' => 'Odpovědi na nejčastěji kladené otázky.',
         'no_faqs' => 'Žádné FAQ nejsou k dispozici.',
     ],
+    'form_demand' => [
+        'individual_request' => 'Individuální požadavek?',
+        'labels' => [
+            'from' => 'Odkud *',
+            'to' => 'Kam *',
+            'airport' => 'Letiště *',
+            'date' => 'Datum *',
+            'people' => 'Osob *',
+            'email' => 'E-mail *',
+            'phone' => 'Telefon *',
+            'note' => 'Poznámka',
+        ],
+        'placeholders' => [
+            'address' => 'Napište adresu',
+            'people_count' => '0',
+            'email' => 'vas@email.cz',
+            'phone' => '774567889',
+            'note' => 'Napište poznámku',
+        ],
+        'buttons' => [
+            'add_note' => 'Poznámka',
+            'remove_note' => 'Odebrat poznámku',
+            'submit' => 'Rezervovat',
+            'submitting' => 'Odesílání...',
+        ],
+        'privacy' => [
+            'text' => 'Odeslaním formuláře souhlasíte se',
+            'link' => 'zásadami ochrany osobních údajů',
+        ],
+    ],
 ];

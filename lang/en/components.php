@@ -43,4 +43,34 @@ return [
         'subtitle' => 'Answers to frequently asked questions.',
         'no_faqs' => 'No FAQs are available.',
     ],
+    'form_demand' => [
+        'individual_request' => 'Individual request?',
+        'labels' => [
+            'from' => 'From *',
+            'to' => 'To *',
+            'airport' => 'Airport *',
+            'date' => 'Date *',
+            'people' => 'People *',
+            'email' => 'E-mail *',
+            'phone' => 'Phone *',
+            'note' => 'Note',
+        ],
+        'placeholders' => [
+            'address' => 'Enter address',
+            'people_count' => '0',
+            'email' => 'your@email.com',
+            'phone' => '774567889',
+            'note' => 'Enter note',
+        ],
+        'buttons' => [
+            'add_note' => 'Note',
+            'remove_note' => 'Remove note',
+            'submit' => 'Reserve',
+            'submitting' => 'Submitting...',
+        ],
+        'privacy' => [
+            'text' => 'By submitting the form you agree to',
+            'link' => 'privacy policy',
+        ],
+    ],
 ];
