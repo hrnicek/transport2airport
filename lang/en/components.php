@@ -45,7 +45,6 @@ return [
     ],
     'form_demand' => [
         'individual_request' => 'Individual request?',
-        'toggle_airport' => 'To airport?',
         'labels' => [
             'from' => 'From *',
             'to' => 'To *',
@@ -61,17 +60,26 @@ return [
             'people_count' => '0',
             'email' => 'your@email.com',
             'phone' => '774567889',
-            'note' => 'Enter note',
+            'note' => 'Write a note',
         ],
         'buttons' => [
             'add_note' => 'Note',
             'remove_note' => 'Remove note',
-            'submit' => 'Reserve',
+            'submit' => 'Book',
             'submitting' => 'Submitting...',
         ],
         'privacy' => [
             'text' => 'By submitting the form you agree to',
-            'link' => 'privacy policy',
+            'link' => 'personal data protection policy',
         ],
+        'toggle_airport' => 'To airport?',
+    ],
+
+    'posts' => [
+        'title' => 'News',
+        'subtitle' => 'Latest information and news from the world of airport transport.',
+        'view_all' => 'View all news',
+        'no_posts' => 'No posts available yet.',
+        'read_more' => 'Read more',
     ],
 ];

@@ -5,5 +5,6 @@ return [
     'pricing' => '/pricing',
     'contact' => '/contact',
     'keywords' => '/airport-transport',
+    'posts' => '/news',
     'demands.success' => '/demand/{demand:uuid}',
 ];
