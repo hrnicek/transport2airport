@@ -40,6 +40,7 @@ class PostForm
                         ->maxSize(1024 * 10) // 10MB
                         ->acceptedFileTypes(['image/*'])
                         ->disk('public')
+                        ->preserveFilenames()
                         ->label('Obrázek'),
                     Toggle::make('is_visible')
                         ->label('Aktivní')
