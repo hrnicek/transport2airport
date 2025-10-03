@@ -18,7 +18,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
     Route::get(LaravelLocalization::transRoute('routes.contact'), [ContactController::class, 'index'])->name('contact');
     Route::get(LaravelLocalization::transRoute('routes.keywords'), [KeywordsController::class, 'index'])->name('keywords');
     Route::get(LaravelLocalization::transRoute('routes.posts'), [PostController::class, 'index'])->name('posts.index');
-    Route::get(LaravelLocalization::transRoute('routes.posts').'/{slug}', [PostController::class, 'show'])->name('posts.show');
+    Route::get(LaravelLocalization::transRoute('routes.posts') . '/{slug}', [PostController::class, 'show'])->name('posts.show');
 
     Route::get(LaravelLocalization::transRoute('routes.demands.success'), [DemandsController::class, 'success'])->name('demands.success');
 });

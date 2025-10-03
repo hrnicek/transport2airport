@@ -23,6 +23,7 @@ class Post extends Model implements HasMedia
         'perex',
         'content',
         'published_at',
+        'is_visible',
     ];
 
     protected $translatable = [

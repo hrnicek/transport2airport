@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
-use Illuminate\Http\Request;
+use Spatie\SchemaOrg\Schema;
 
 class PostController extends Controller
 {
@@ -16,6 +16,17 @@ class PostController extends Controller
             ->orderBy('published_at', 'desc')
             ->paginate(9);
 
+        // SEO meta for posts listing
+        seo()->title(__('posts.page_title'));
+        seo()->description(__('posts.page_description'));
+
+        // JSON-LD schema for the posts listing page
+        $schema = Schema::webPage()
+            ->name(__('posts.page_title'))
+            ->description(__('posts.page_description'));
+
+        seo()->jsonLdImport($schema);
+
         return view('posts.index', compact('posts'));
     }
 
@@ -27,6 +38,27 @@ class PostController extends Controller
         $post = Post::active()
             ->where('slug', $slug)
             ->firstOrFail();
+
+        $locale = app()->getLocale();
+
+        // SEO meta for post detail
+        seo()->title($post->getTranslation('title', $locale));
+        seo()->description($post->getTranslation('perex', $locale) ?? '');
+
+        // JSON-LD schema for the post detail page
+        $imageUrl = $post->getFirstMediaUrl('image');
+        $schema = Schema::blogPosting()
+            ->headline($post->getTranslation('title', $locale))
+            ->datePublished(optional($post->published_at)->toIso8601String())
+            ->image($imageUrl ?: null)
+            ->articleBody(strip_tags($post->getTranslation('content', $locale)))
+            ->publisher(
+                Schema::organization()
+                    ->name('Transport2Airport')
+                    ->logo('/img/logo-icon.svg')
+            );
+
+        seo()->jsonLdImport($schema);
 
         return view('posts.show', compact('post'));
     }
