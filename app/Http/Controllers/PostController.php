@@ -17,13 +17,13 @@ class PostController extends Controller
             ->paginate(9);
 
         // SEO meta for posts listing
-        seo()->title(__('posts.page_title'));
-        seo()->description(__('posts.page_description'));
+        seo()->title(__('pages.posts.index.title'));
+        seo()->description(__('pages.posts.index.description'));
 
         // JSON-LD schema for the posts listing page
         $schema = Schema::webPage()
-            ->name(__('posts.page_title'))
-            ->description(__('posts.page_description'));
+            ->name(__('pages.posts.index.title'))
+            ->description(__('pages.posts.index.description'));
 
         seo()->jsonLdImport($schema);
 
