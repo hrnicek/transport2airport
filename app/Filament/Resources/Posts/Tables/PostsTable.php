@@ -21,23 +21,12 @@ class PostsTable
                 TextColumn::make('title')
                     ->label('Titulek')
                     ->searchable(),
-                TextColumn::make('slug')
-                    ->label('URL slug')
-                    ->searchable(),
+
                 TextColumn::make('published_at')
                     ->label('Publikováno')
                     ->dateTime()
                     ->sortable(),
-                TextColumn::make('created_at')
-                    ->label('Vytvořeno')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                TextColumn::make('updated_at')
-                    ->label('Aktualizováno')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+
             ])
             ->filters([
                 //
