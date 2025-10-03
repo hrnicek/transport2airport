@@ -1,6 +1,18 @@
 {
+  "lang/php_cs.json": {
+    "file": "assets/php_cs-yCumMB4U.js",
+    "name": "php_cs",
+    "src": "lang/php_cs.json",
+    "isDynamicEntry": true
+  },
+  "lang/php_en.json": {
+    "file": "assets/php_en-Djif3k5P.js",
+    "name": "php_en",
+    "src": "lang/php_en.json",
+    "isDynamicEntry": true
+  },
   "resources/css/app.css": {
-    "file": "assets/app-DrLgItch.css",
+    "file": "assets/app-B7ZIWSIQ.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "names": [
@@ -8,9 +20,13 @@
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-B5dcHt7M.js",
+    "file": "assets/app-U8ybnMdf.js",
     "name": "app",
     "src": "resources/js/app.js",
-    "isEntry": true
+    "isEntry": true,
+    "dynamicImports": [
+      "lang/php_cs.json",
+      "lang/php_en.json"
+    ]
   }
 }
