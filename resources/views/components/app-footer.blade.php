@@ -51,7 +51,7 @@
         <div class="space-y-3 text-sm">
           <div class="flex items-center text-gray-600">
             <x-eva-email-outline class="mr-2 w-4 h-4 text-primary" />
-            <a href="mailto:airportpickup@seznam.cz"
+            <a href="mailto:info@transport2airport.cz"
               class="transition-colors hover:text-primary">info@transport2airport.cz</a>
           </div>
           <div class="flex items-center text-gray-600">
