@@ -82,4 +82,23 @@ return [
         'no_posts' => 'No posts available yet.',
         'read_more' => 'Read more',
     ],
+
+    'we_cooperate' => [
+        'subtitle' => 'Our partnerships',
+        'title' => 'We cooperate with Hotel Flora',
+        'description' => 'We have established a partnership with Hotel Flora Olomouc to provide you with complete services - from airport transfers to luxury accommodation in the city center.',
+        'transfers' => [
+            'title' => 'Airport transfers',
+            'description' => 'Reliable and comfortable transportation to all major airports in the Czech Republic and abroad.',
+            'link_text' => 'Book transfer',
+        ],
+        'hotel' => [
+            'title' => 'Why Hotel Flora?',
+            'description' => 'Modern 4* hotel in the heart of Olomouc offers luxury accommodation with exceptional services and ideal location for your travels.',
+            'link_text' => 'Visit Hotel',
+        ],
+        'hotel_info' => 'Hotel Flora is a modern four-star hotel in the center of Olomouc with excellent gastronomy, wellness center and professional service. The ideal place for your stay in our beautiful city.',
+        'visit_website' => 'Visit hotel website',
+        'book_transfer' => 'Book transfer',
+    ],
 ];

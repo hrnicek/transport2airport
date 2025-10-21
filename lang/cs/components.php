@@ -82,4 +82,23 @@ return [
         'no_posts' => 'Zatím nejsou k dispozici žádné příspěvky.',
         'read_more' => 'Číst více',
     ],
+
+    'we_cooperate' => [
+        'subtitle' => 'Naše partnerství',
+        'title' => 'Spolupracujeme s Hotel Flora',
+        'description' => 'Navázali jsme partnerství s Hotel Flora Olomouc, abychom vám poskytli kompletní služby - od transferu na letiště až po luxusní ubytování v centru města.',
+        'transfers' => [
+            'title' => 'Letištní transfery',
+            'description' => 'Spolehlivé a komfortní přepravy na všechna hlavní letiště v České republice i zahraničí.',
+            'link_text' => 'Rezervovat transfer',
+        ],
+        'hotel' => [
+            'title' => 'Proč Hotel Flora?',
+            'description' => 'Moderní 4* hotel v srdci Olomouce nabízí luxusní ubytování s výjimečnými službami a ideální polohou pro vaše cestování.',
+            'link_text' => 'Navštívit hotel',
+        ],
+        'hotel_info' => 'Hotel Flora je moderní čtyřhvězdičkový hotel v centru Olomouce s vynikající gastronomií, wellness centrem a profesionálním servisem. Ideální místo pro váš pobyt v našem krásném městě.',
+        'visit_website' => 'Navštívit webové stránky hotelu',
+        'book_transfer' => 'Rezervovat transfer',
+    ],
 ];
