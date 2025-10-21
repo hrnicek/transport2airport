@@ -21,6 +21,15 @@
 
   {{ seo()->generate() }}
 
+  @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+    <link rel="alternate" hreflang="{{ $localeCode }}"
+      href="{{ preg_replace('#(?<!:)//+#', '/', LaravelLocalization::getLocalizedURL($localeCode)) }}" />
+  @endforeach
+
+  {{-- Default hreflang for x-default (fallback to Czech) --}}
+  <link rel="alternate" hreflang="x-default"
+    href="{{ preg_replace('#(?<!:)//+#', '/', LaravelLocalization::getLocalizedURL('cs')) }}" />
+
   @vite(['resources/css/app.css', 'resources/js/app.js'])
   @stack('styles')
 </head>
