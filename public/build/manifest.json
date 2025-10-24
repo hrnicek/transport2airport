@@ -1,18 +1,18 @@
 {
   "lang/php_cs.json": {
-    "file": "assets/php_cs-yCumMB4U.js",
+    "file": "assets/php_cs-Bz5ZTK_D.js",
     "name": "php_cs",
     "src": "lang/php_cs.json",
     "isDynamicEntry": true
   },
   "lang/php_en.json": {
-    "file": "assets/php_en-Djif3k5P.js",
+    "file": "assets/php_en-BizLYZ2d.js",
     "name": "php_en",
     "src": "lang/php_en.json",
     "isDynamicEntry": true
   },
   "resources/css/app.css": {
-    "file": "assets/app-B7ZIWSIQ.css",
+    "file": "assets/app-Bzm0Dmg0.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "names": [
@@ -20,7 +20,7 @@
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-U8ybnMdf.js",
+    "file": "assets/app-CvV-O8AD.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
